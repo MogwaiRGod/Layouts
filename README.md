@@ -1,1 +1,5 @@
-# LAYOUTS
+# Layouts
+
+## Langages
+	- HTML
+	- CSS
