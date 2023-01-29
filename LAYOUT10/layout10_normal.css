@@ -1,23 +1,4 @@
-/* MODIFIER LES VALEURS DES VARIABLES DANS ROOT POUR PERSONNALISER LE DESIGN */
-:root {
-    /* COULEURS */
-        /* Backgrounds */
-        --bg-site: rgb(225, 221, 221);  /* couleur de fond du site */
-        --bg-div: rgb(25, 21, 21);  /* couleur de fond des divs */
-        /* TEXTE */
-        --text-color: rgb(207, 210, 211) ; /* couleur du texte principal */
-        /* LIENS/BOUTONS */
-        --bg-boutons: rgb(68, 69, 72) ;
-        --bg-boutons-hover: rgb(41, 42, 44) ;   /* background au survol */
-        --txt-color-boutons: rgb(251, 255, 248) ;
-        --txt-color-boutons-hover: rgb(156, 255, 255);    /* texte au survol */
-    /* POLICES */
-    --txt-font: Helvetica, Verdana, Arial, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif ;  /* typo du texte principal */
-    --bouton-font: ; /* typo des liens/boutons */
-}
-
-
-* {
+* { /* TMP */
     margin:0;
     color: var(--text-color);
     font-family: var(--txt-font);
