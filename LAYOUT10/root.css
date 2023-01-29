@@ -3,7 +3,7 @@
 
     /* COULEURS */
 
-        /* Backgrounds */
+        /* BACKGROUNDS */
         --bg-site: rgb(225, 221, 221);  /* couleur de fond du site */
         --bg-div: rgb(21, 18, 18);  /* couleur de fond des divs */
         /* TEXTE */
@@ -24,6 +24,9 @@
         --lh-txt-para: 24pt; /* hauteur de ligne paragraphe principal */
         --taille-txt-btn : 10pt;
         --taille-titre-main: 22pt;
+        /* STYLES */
+        --weight-titre-menu : 800;
+        --weight-titre-main: 1000;
 
     /* FORMATS */
 
@@ -34,5 +37,6 @@
         --top-divs-g-d: 17%; /* position top des des éléments des divs gauches et droites */
         /* IMAGES */
         --taille-main-img : 200px;
+        --taille-img-droite : 130px;
 
 }
