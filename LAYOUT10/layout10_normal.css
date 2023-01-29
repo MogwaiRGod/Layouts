@@ -1,48 +1,68 @@
-* { /* TMP */
-    margin:0;
-    color: var(--text-color);
-    font-family: var(--txt-font);
+/* POUR DISPOSER LE LAYOUT */
+body { /* TMP : body à supprimer si besoin*/
+    margin: 0;
 }
-
-/* MODIFIER A VOS RISQUES ET PERILS */
 
 #layout10 {
-    display:block;
+    margin: 0;
+    display: block;
     overflow: auto;
     height: fit-content;
-    background: var(--bg-site);
+    padding: 1%;
+    background: var(--bg-site); /* optionnel; décommenter pour appliquer la couleur du background du site */
    
 }
-#menu-gauche, #main-div, #div-droite {
+
+
+/* /////////////// MODIFIER A VOS RISQUES ET PERILS /////////////////// */
+
+    /* GENERAL  */
+
+.divs-layout10 {
+    box-sizing: border-box;
     margin: 0.5%;
-    padding: 3% 0;
+    padding: 2% 0;
     display: inline-block;
     position: relative;
+    height: var(--height-layout);
+    overflow: scroll;
     background: var(--bg-div);
 }
 
-#menu-gauche {
-    float:left;
-    width: 19vw;    
-}
-
-#titre-menu {
-    position: relative;
-    top: 0;
-    font-weight: 800;
-    text-align: center;
+.img-layout10 {
+    max-width:100%;
+    max-height:100%;
 }
 
 .lnk-btn {
     position: relative;
     left: 20%;
     display: block;
-    background: var(--bg-boutons);
-    border-radius: 10px;
     width: 50%;
     padding: 2%;
     margin: 2%;
     text-decoration: none;
+    background: var(--bg-boutons);
+    border-radius: var(--arrondi-btn) ;
+    color: var(--txt-color-boutons);
+    font-family: var(--bouton-font);
+    font-size: var(--taille-txt-btn);
+}
+
+
+    /*  DIV DE GAUCHE    */
+#menu-gauche {
+    float:left;
+    width: 18vw;    
+}
+
+#titre-menu {
+    position: relative;
+    font-weight: 800;
+    text-align: center;
+    margin-top: var(--top-divs-g-d);
+    color: var(--text-color);
+    font-family: var(--txt-font);
 }
 
 nav a:nth-child(1) {
@@ -52,14 +72,24 @@ nav a:nth-child(1) {
 .lnk-btn:hover {
     background: var(--bg-boutons-hover);
     color: var(--txt-color-boutons-hover);
+    font-family: var(--bouton-font);
 }
 
+
+
+    /*  DIV DU MILEU    */
 
 #main-div {
     padding-right: 4%;
     padding-left: 4%;
-    width: 50vw;
-    height: fit-content;
+    width: 57vw;
+}
+
+#main-div-titre {
+    width: max-content;
+    color: var(--text-color);
+    font-family: var(--txt-font);
+    font-size: var(--taille-titre-main);
 }
 
 #div-para-main-div {
@@ -68,33 +98,29 @@ nav a:nth-child(1) {
 }
 
 #para-main-div {
-    margin-top: 2%;
-    line-height: 24pt;
-}
-
-#main-div-titre {
-    width: max-content;
-    font-size: 20pt;
+    margin-top: 1%;
+    color: var(--text-color);
+    font-family: var(--txt-font);
+    line-height: var(--lh-txt-para);
+    font-size: var(--taille-txt-para);
 }
 
 #img-main-div {
     position: absolute;
     top: 20%;
     display: inline;
-    left: 80%;
-    height: 200px;
-    width: 20px;
+    left: 70%;
+    height: var(--taille-main-img);
+    width: var(--taille-main-img);
     
 }
 
-#img-main-div, #img-div-droite {
-    max-width:100%;
-    max-height:100%;
-}
+
+    /*  DIV DE DROITE    */
 
 #div-droite {
     float: right;
-    width: 20vw;
+    width: 18vw;
 }
 
 #img-div-droite {
@@ -104,15 +130,9 @@ nav a:nth-child(1) {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    margin-top: var(--top-divs-g-d);
 }
 
 #btn-div-droite {
     margin-top: 7%;
 }
-
-/* .img-layout10 {
-    height: 100px;
-    width: 100px;
-} */
