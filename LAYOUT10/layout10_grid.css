@@ -10,39 +10,15 @@ body {
     width: 98vw;
     height: var(--height-layout);
     grid-template: 50vh / 19vw 60vw 19vw;
-    background: var(--bg-site);
 }
 
 /* ////////////////////////////////////////////////////// */
 
     /* GENERAL */
 
-.divs-layout10 {
-    background: var(--bg-div);
-    margin: 0 1%;
-
-}
-
 .lnk-btn {
     display: block;
     position: relative;
-    height:fit-content;
-    left: 20%;
-    width: 50%;
-    padding: 2%;
-    margin: 2%;
-    text-decoration: none;
-    background: var(--bg-boutons);
-    border-radius: var(--arrondi-btn) ;
-    color: var(--txt-color-boutons);
-    font-family: var(--bouton-font);
-    font-size: var(--taille-txt-btn);
-}
-
-.lnk-btn:hover {
-    background: var(--bg-boutons-hover);
-    color: var(--txt-color-boutons-hover);
-    font-family: var(--bouton-font);
 }
 
 .img-layout10 {
@@ -55,15 +31,19 @@ body {
 
 #menu-gauche {
     padding-top: var(--top-divs-g-d);
+    display: grid;
+    grid-template: fit-content 50% / 100%;
 }
 
 #titre-menu {
     position: relative;
     text-align: center;
-    margin-top: var(--top-divs-g-d);
-    font-weight: var(--weight-titre-menu);
-    color: var(--text-color);
-    font-family: var(--txt-font);
+    margin:0;
+}
+
+#nav-gauche {
+    position: relative;
+    left: 20%;
 }
 
 
@@ -79,12 +59,7 @@ body {
 }
 
 #main-div-titre {
-    /* display: inline-block; */
-    font-weight: var(--weight-titre-main);
-    color: var(--text-color);
     vertical-align: top;
-    font-family: var(--txt-font);
-    font-size: var(--taille-titre-main);
     height: fit-content;
 }
 
@@ -94,18 +69,11 @@ body {
 
 #para-main-div {
     display: block;
-    color: var(--text-color);
-    font-family: var(--txt-font);
-    line-height: var(--lh-txt-para);
-    font-size: var(--taille-txt-para);
 }
 
 #img-main-div {
     position: relative;
     top: 10%;
-    /* left: 30%; */
-    height: var(--taille-main-img);
-    width: var(--taille-main-img);
 }
 
 
@@ -120,14 +88,14 @@ body {
 #img-div-droite {
     top: var(--top-divs-g-d);
     position: relative;
-    left: 25%;
-    width: var(--taille-img-droite);
-    height: var(--taille-img-droite);
+    left: 28%;
     border-radius: 50%;
 }
 
 #btn-div-droite {
-    margin-top: 10%;
+    margin-top: 12%;
+    left: 22%;
+    height: fit-content;
 }
 
 

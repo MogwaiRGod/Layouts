@@ -10,47 +10,22 @@ body {
     padding: 1%;
     width: 98vw;
     height: var(--height-layout);
-    background: var(--bg-site);
 }
 
 /* ////////////////////////////////////////////////////// */
 
     /* GENERAL */
 
-.divs-layout10 {
-    background: var(--bg-div);
-    margin: 0 0.5%;
-
-}
-
-
-
 .lnk-btn {
     display: block;
     position: relative;
-    height:fit-content;
-    width: 50%;
-    padding: 2%;
-    margin: 2%;
-    text-decoration: none;
-    background: var(--bg-boutons);
-    border-radius: var(--arrondi-btn) ;
-    color: var(--txt-color-boutons);
-    font-family: var(--bouton-font);
-    font-size: var(--taille-txt-btn);
 }
-
-.lnk-btn:hover {
-    background: var(--bg-boutons-hover);
-    color: var(--txt-color-boutons-hover);
-    font-family: var(--bouton-font);
-}
-
 
 .img-layout10 {
     max-width:100%;
     max-height:100%;
 }
+
 
     /* DIV GAUCHE */
 
@@ -63,17 +38,12 @@ body {
 
 #titre-menu {
     position: relative ;
-    text-align: center;
-    font-weight: var(--weight-titre-menu);
-    color: var(--text-color);
-    font-family: var(--txt-font);
 }
 
 #nav-gauche {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
 }
 
 
@@ -87,29 +57,21 @@ body {
     overflow:scroll;
 }
 
+#para-main-div {
+    width: 100%;
+}
+
 #main-col-1 {
     align-self: flex-start;
 }
 
-#para-main-div {
-    color: var(--text-color);
-    font-family: var(--txt-font);
-    line-height: var(--lh-txt-para);
-    font-size: var(--taille-txt-para);
-}
-
 #main-div-titre {
-    font-weight: var(--weight-titre-main);
-    color: var(--text-color);
-    font-family: var(--txt-font);
-    font-size: var(--taille-titre-main);
+    margin: 0;
     height: fit-content;
 }
 
 #img-main-div {
     margin-left: 2%;
-    height: var(--taille-main-img);
-    width: var(--taille-main-img);
 }
 
     /* DIV DROITE */
@@ -122,11 +84,6 @@ body {
     justify-content: center;
 }
 
-#img-div-droite {
-    width: var(--taille-img-droite);
-    height: var(--taille-img-droite);
-    border-radius: 50%;
-}
 
 #btn-div-droite {
     margin-top: 10%;

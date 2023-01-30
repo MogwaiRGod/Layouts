@@ -8,9 +8,7 @@ body { /* TMP : body à supprimer si besoin*/
     display: block;
     overflow: auto;
     height: fit-content;
-    padding: 1%;
-    background: var(--bg-site); /* optionnel; décommenter pour appliquer la couleur du background du site */
-   
+    padding: 1%;   
 }
 
 
@@ -19,14 +17,10 @@ body { /* TMP : body à supprimer si besoin*/
     /* GENERAL  */
 
 .divs-layout10 {
-    box-sizing: border-box;
-    margin: 0.5%;
     padding: 2% 0;
     display: inline-block;
     position: relative;
-    height: var(--height-layout);
     overflow: scroll;
-    background: var(--bg-div);
 }
 
 .img-layout10 {
@@ -38,21 +32,6 @@ body { /* TMP : body à supprimer si besoin*/
     position: relative;
     left: 20%;
     display: block;
-    width: 50%;
-    padding: 2%;
-    margin: 2%;
-    text-decoration: none;
-    background: var(--bg-boutons);
-    border-radius: var(--arrondi-btn) ;
-    color: var(--txt-color-boutons);
-    font-family: var(--bouton-font);
-    font-size: var(--taille-txt-btn);
-}
-
-.lnk-btn:hover {
-    background: var(--bg-boutons-hover);
-    color: var(--txt-color-boutons-hover);
-    font-family: var(--bouton-font);
 }
 
 
@@ -64,11 +43,6 @@ body { /* TMP : body à supprimer si besoin*/
 
 #titre-menu {
     position: relative;
-    font-weight: 800;
-    text-align: center;
-    margin-top: var(--top-divs-g-d);
-    color: var(--text-color);
-    font-family: var(--txt-font);
 }
 
 nav a:nth-child(1) {
@@ -83,14 +57,6 @@ nav a:nth-child(1) {
     width: 57vw;
 }
 
-#main-div-titre {
-    width: max-content;
-    font-weight: var(--weight-titre-main);
-    color: var(--text-color);
-    font-family: var(--txt-font);
-    font-size: var(--taille-titre-main);
-}
-
 #div-para-main-div {
     padding-bottom: 1%;
     width: 60%;
@@ -98,20 +64,13 @@ nav a:nth-child(1) {
 
 #para-main-div {
     margin-top: 1%;
-    color: var(--text-color);
-    font-family: var(--txt-font);
-    line-height: var(--lh-txt-para);
-    font-size: var(--taille-txt-para);
 }
 
 #img-main-div {
     position: absolute;
     top: 20%;
     display: inline;
-    left: 70%;
-    height: var(--taille-main-img);
-    width: var(--taille-main-img);
-    
+    left: 70%;   
 }
 
 
@@ -125,11 +84,8 @@ nav a:nth-child(1) {
 #img-div-droite {
     display: block;
     position: relative;
-    left: 27%;
-    height: var(--taille-img-droite);
-    width: var(--taille-img-droite);
-    border-radius: 50%;
     margin-top: var(--top-divs-g-d);
+    left: 27%;
 }
 
 #btn-div-droite {
