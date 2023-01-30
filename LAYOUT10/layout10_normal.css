@@ -1,0 +1,93 @@
+/* POUR DISPOSER LE LAYOUT */
+body { /* TMP : body à supprimer si besoin*/
+    margin: 0;
+}
+
+#layout10 {
+    margin: 0;
+    display: block;
+    overflow: auto;
+    height: fit-content;
+    padding: 1%;   
+}
+
+
+/* /////////////// MODIFIER A VOS RISQUES ET PERILS /////////////////// */
+
+    /* GENERAL  */
+
+.divs-layout10 {
+    padding: 2% 0;
+    display: inline-block;
+    position: relative;
+    overflow: scroll;
+}
+
+.img-layout10 {
+    max-width:100%;
+    max-height:100%;
+}
+
+.lnk-btn {
+    position: relative;
+    left: 20%;
+    display: block;
+}
+
+
+    /*  DIV DE GAUCHE    */
+#menu-gauche {
+    float:left;
+    width: 18vw;    
+}
+
+#titre-menu {
+    position: relative;
+}
+
+nav a:nth-child(1) {
+    margin-top: 5%;
+}
+
+    /*  DIV DU MILEU    */
+
+#main-div {
+    padding-right: 4%;
+    padding-left: 4%;
+    width: 57vw;
+}
+
+#div-para-main-div {
+    padding-bottom: 1%;
+    width: 60%;
+}
+
+#para-main-div {
+    margin-top: 1%;
+}
+
+#img-main-div {
+    position: absolute;
+    top: 20%;
+    display: inline;
+    left: 70%;   
+}
+
+
+    /*  DIV DE DROITE    */
+
+#div-droite {
+    float: right;
+    width: 18vw;
+}
+
+#img-div-droite {
+    display: block;
+    position: relative;
+    margin-top: var(--top-divs-g-d);
+    left: 27%;
+}
+
+#btn-div-droite {
+    margin-top: 7%;
+}

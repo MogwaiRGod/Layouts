@@ -1,0 +1,139 @@
+/* MODIFIER LES VALEURS DES VARIABLES DANS ROOT POUR PERSONNALISER LE DESIGN */
+:root {
+
+    /* COULEURS */
+
+        /* BACKGROUNDS */
+        --bg-site: rgb(225, 221, 221);  /* couleur de fond du site */
+        --bg-div: rgb(21, 18, 18);  /* couleur de fond des divs */
+        /* TEXTE */
+        --text-color: rgb(207, 210, 211) ; /* couleur du texte principal */
+        /* LIENS/BOUTONS */
+        --bg-boutons: rgb(68, 69, 72) ;
+        --bg-boutons-hover: rgb(41, 42, 44) ;   /* background au survol */
+        --txt-color-boutons: rgb(251, 255, 248) ;
+        --txt-color-boutons-hover: rgb(156, 255, 255);    /* texte au survol */
+    
+    /* POLICES */
+
+        /* TYPOS */
+        --txt-font: Helvetica, Verdana, Arial, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif ;  /* typo du texte principal */
+        --bouton-font: Helvetica, Verdana, Arial, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif ; /* typo des liens/boutons */
+        /* TAILLES */
+        --taille-txt-para : 12pt;
+        --lh-txt-para: 24pt; /* hauteur de ligne paragraphe principal */
+        --taille-txt-btn : 10pt;
+        --taille-titre-main: 22pt;
+        /* STYLES */
+        --weight-titre-menu : 800;
+        --weight-titre-main: 1000;
+
+    /* FORMATS */
+
+    --height-layout: 47vh;
+        /* BOUTONS/LIENS */
+        --arrondi-btn: 10px;
+        /* POSITION DANS LES DIVS */
+        --top-divs-g-d: 17%; /* position top des des éléments des divs gauches et droites */
+        /* IMAGES */
+        --taille-main-img : 200px;
+        --taille-img-droite : 130px;
+        --arrond-img-droite : 50%;
+
+}
+
+/*  DESIGN GENERAL  */
+
+#layout10 {
+    background: var(--bg-site); /* optionnel; décommenter pour appliquer la couleur du background du site */
+}
+
+.divs-layout10 {
+    box-sizing: border-box;
+    margin: 0.5%;
+    padding: 2% 0;
+    height: var(--height-layout);
+    background: var(--bg-div);
+}
+
+.img-layout10 {
+    max-width:100%;
+    max-height:100%;
+}
+
+.lnk-btn {
+    width: 50%;
+    padding: 2%;
+    margin: 2%;
+    text-decoration: none;
+    background: var(--bg-boutons);
+    border-radius: var(--arrondi-btn) ;
+    color: var(--txt-color-boutons);
+    font-family: var(--bouton-font);
+    font-size: var(--taille-txt-btn);
+}
+
+.lnk-btn:hover {
+    background: var(--bg-boutons-hover);
+    color: var(--txt-color-boutons-hover);
+    font-family: var(--bouton-font);
+}
+
+#menu-gauche {
+    width: 18vw;    
+}
+
+#titre-menu {
+    font-weight: var(--weight-titre-menu);
+    text-align: center;
+    margin-top: var(--top-divs-g-d);
+    color: var(--text-color);
+    font-family: var(--txt-font);
+}
+
+nav a:nth-child(1) {
+    margin-top: 5%;
+}
+
+    /*  DIV DU MILEU    */
+
+#main-div {
+    padding-right: 4%;
+    padding-left: 4%;
+    width: 57vw;
+}
+
+#main-div-titre {
+    width: max-content;
+    font-weight: var(--weight-titre-main);
+    color: var(--text-color);
+    font-family: var(--txt-font);
+    font-size: var(--taille-titre-main);
+}
+
+#div-para-main-div {
+    padding-bottom: 1%;
+}
+
+#para-main-div {
+    margin-top: 1%;
+    color: var(--text-color);
+    font-family: var(--txt-font);
+    line-height: var(--lh-txt-para);
+    font-size: var(--taille-txt-para);
+}
+
+#img-main-div {
+    height: var(--taille-main-img);
+    width: var(--taille-main-img);
+    
+}
+
+
+    /*  DIV DE DROITE    */
+
+#img-div-droite {
+    height: var(--taille-img-droite);
+    width: var(--taille-img-droite);
+    border-radius: var(--arrond-img-droite);
+}
